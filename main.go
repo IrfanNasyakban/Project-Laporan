@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	authcontroller "github.com/IrfanNasyakban/Project-Laporan/go-auth/controller"
+	authcontroller "github.com/IrfanNasyakban/Project-Laporan/controller"
 )
 
 func main() {
