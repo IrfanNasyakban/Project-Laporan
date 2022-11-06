@@ -8,6 +8,9 @@ import (
 )
 
 func main() {
+	fs := http.FileServer(http.Dir("assets"))
+	http.Handle("/assets/", http.StripPrefix("/assets", fs))
+
 	http.HandleFunc("/", authcontroller.Index)
 	http.HandleFunc("/login", authcontroller.Login)
 
