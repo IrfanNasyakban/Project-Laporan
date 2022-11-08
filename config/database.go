@@ -11,4 +11,7 @@ func DBconn() (db *sql.DB, err error) {
 	dbUser := "root"
 	dbPass := ""
 	dbName := "project_laporan"
+
+	db, err = sql.Open(dbDriver, dbUser+":"+dbPass+"0/"+dbName)
+	return
 }
