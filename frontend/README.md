@@ -10,7 +10,7 @@ In the project directory, you can run:
 
 ### `npm install react-scripts --save`
 
-before running first install nodemon `npm install react-scripts --save`
+before running first install npm `npm install react-scripts --save`
 
 ### `npm start`
 
