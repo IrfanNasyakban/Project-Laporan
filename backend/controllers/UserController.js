@@ -68,8 +68,8 @@ export const updateUser = async (req, res) => {
 
     if (!User) return res.status(404).json({ msg: "No Data Found" })
     let fileName = ""
-    if (req.file === null) {
-        fileName = user.image
+    if (req.files === null) {
+        fileName = User.image
     } else {
         const file = req.files.file
         const fileSize = file.data.length
